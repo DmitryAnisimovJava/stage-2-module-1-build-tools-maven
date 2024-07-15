@@ -17,6 +17,8 @@
         <junit.version>5.8.1</junit.version>
         <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
         <maven.surfire.plugin.version>3.1.2</maven.surfire.plugin.version>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -33,7 +35,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.2</version>
+                <version>3.9.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
