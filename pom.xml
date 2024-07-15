@@ -15,6 +15,8 @@
 
     <properties>
         <junit.version>5.8.1</junit.version>
+        <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
+        <maven.surfire.plugin.version>3.1.2</maven.surfire.plugin.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -29,7 +31,14 @@
     <build>
         <plugins>
             <plugin>
-                <!-- something should be here-->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surfire.plugin.version}</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${maven.jar.plugin.version}</version>
             </plugin>
         </plugins>
     </build>
